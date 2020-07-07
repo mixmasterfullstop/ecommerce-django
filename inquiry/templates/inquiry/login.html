@@ -1,0 +1,13 @@
+{% extends 'inquiry/bas.html' %}
+{% load static %}
+{% block content %}
+
+<div class=" login bg-secondary">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+     <button type="submit" class="btn btn-outline-light btn-sm ml-3 ">LOGIN</button>
+    </form>
+</div>
+
+{% endblock content %}

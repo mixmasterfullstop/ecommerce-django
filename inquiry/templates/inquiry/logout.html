@@ -1,0 +1,10 @@
+{% extends 'inquiry/bas.html' %}
+
+{% block content %}
+<hr>
+    <h3>You have successfully logged out</h3>
+    <a class="text-center text-info" href={% url 'login' %}> Login Again</a>
+    <p><b>OR</b></p>
+    <a class="text-center text-info" href={% url 'signup' %}> Sign Up</a>
+
+{% endblock %}

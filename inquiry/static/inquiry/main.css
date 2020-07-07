@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Mukta:wght@600&display=swap');
+
+/*.nav-item a {*/
+/*    color: white;*/
+/*    font-size: 30px;*/
+/*    padding: 0.4em;*/
+/*    margin: 0.5em;*/
+
+/*}*/
+/* !* .s1 div /{*/
+/*    background-image:url("../assets/cover.jpg");*/
+/*    background-size: 100%;*/
+
+/*} *!*/
+
+/*.s1 .row .col-md-6 col-sm-12 col-xl-4{*/
+/*    align-items: center;*/
+
+/*}*/
+/*.home{*/
+/*    background-size: cover;*/
+/*    background-attachment: fixed;*/
+/*    height: 80vh;*/
+
+
+/*}*/
+/*.home h1{*/
+/*    color: #ffffff;*/
+/*    font-size:100px;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.navlogin{*/
+/*    border: 3px solid white;*/
+/*}*/
+/*.login{*/
+/*    height: 300px;*/
+/*    width: 300px;*/
+/*    background-color: #0f6674;*/
+/*    padding-top: 30px;*/
+/*    border-radius: 15px;*/
+/*    margin-top: 60px;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+
+
+
+/*}*/
+/*.login input{*/
+/*    background-color: #0f6674;*/
+/*    border-width: 0px 0px 3px 0px;*/
+/*    outline: none;*/
+/*    margin-left: 10px;*/
+
+/*}*/
+/*.login label{*/
+/*    font-size: 25px;*/
+/*    font-weight: bold;*/
+/*        margin-left: 10px;*/
+
+/*}*/
+/*.login input:focus{*/
+/*    border-width: 0px 0px 3px 0px;*/
+/*}*/
+.nav-item a {
+    color: white;
+    font-size: 15px;
+    padding: 0.4em;
+    margin: 0.5em;
+
+}
+
+ /* .s1 div /{
+    background-image:url("../assets/cover.jpg");
+    background-size: 100%;
+
+} */
+
+
+.home{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 30vh;
+    background-position: center;
+    border-radius: 0px;
+
+
+}
+.home h1{
+    color: #ffffff;
+    font-size:40px;
+    font-weight: bold;
+}
+.navlogin{
+    font-weight: bold;
+    border: 3px solid white;
+    flex: 2;
+}
+.login{
+    height: 500px;
+    width: 300px;
+    padding: 30px;
+    border-radius: 6px;
+    margin-top:60px;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+}
+.login input{
+    background-color: transparent;
+    border-width: 0px 0px 3px 0px;
+    outline: none;
+    margin-left: 15px;
+    width: 150px;
+    height: 20px;
+
+}
+.login label{
+    font-size: 12px;
+    font-weight: bold;
+        margin-left: 10px;
+    color: white;
+
+}
+
+.card{
+    width:350px ;
+    height:300px ;
+    align-self: center;
+      margin: 0 auto; /* Added */
+        float: none; /* Added */
+}
+.card img{
+    max-height: 200px;
+    max-width: 100px;
+    padding-top: 20px;
+}
+.card h5, .card p{
+    font-size: 20px;
+}
+.errorlist li {
+    font-size: 10px;
+}
+.reg{
+  height: 400px;
+    width: 200px;
+    padding-top: 10px;
+    border-radius: 6px;
+    margin-top: 50px;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}.reg input{
+    background-color: transparent;
+    border-width: 0px 0px 3px 0px;
+    outline: none;
+    margin-left: 15px;
+    width: 150px;
+    height: 20px;
+
+}
+.reg label{
+    font-size: 12px;
+    font-weight: bold;
+        margin-left: 10px;
+    color: white;
+
+}
+
+
+ /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .card{
+    width: 500px;
+}
+.card img{
+    max-height: 300px;
+    max-width: 200px;
+    padding-top: 20px;
+}
+
+    .home h1{
+    color: #ffffff;
+    font-size:50px;
+    font-weight: bold;
+
+}
+
+    .nav-item a {
+    color: white;
+    font-size: 20px;
+    padding: 0.2em;
+    margin: 0.5em;
+
+}
+    .reg{
+        margin-top:120px ;
+        width: 400px;
+        height:500px ;
+        padding: 40px;
+    }
+
+    .reg input{
+
+    width: 200px;
+    height: 40px;
+
+}
+.reg label{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: white;
+
+}
+
+
+}
+
+
+ /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .reg {
+        top: 30%;
+        left: 50%;
+    }
+    .card{
+        width: 370px;
+    }
+
+.login{
+    width: 400px;
+    padding: 75px;
+}
+.btn{
+    margin-top: 30px;
+}
+.home h1{
+    color: #ffffff;
+    font-size:60px;
+    font-weight: bold;
+}
+
+}
+
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .nav-item a {
+    color: white;
+    font-size: 20px;
+    padding: 0.6em;
+    margin-left: 0.6em;
+
+}
+.card {
+    width: 370px;
+}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .home h1{
+    color: #ffffff;
+    font-size:80px;
+    font-weight: bold;
+}
+}

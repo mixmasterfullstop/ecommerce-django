@@ -1,0 +1,15 @@
+
+{% extends 'inquiry/bas.html' %}
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Make an Inquiry</h1>
+    <form method="POST" id="form">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" class="btn btn-dark mt-2">SUBMIT</button>
+</form>
+
+
+
+</div>
+{% endblock content %}

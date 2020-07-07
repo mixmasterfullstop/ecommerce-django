@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Formal Jungle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href={% static 'inquiry/bootstrap.css' %}>
+       <link rel="stylesheet" type="text/css" href={% static 'inquiry/main.css' %}>
+</head>
+</head>
+<body>
+    <header>
+
+        <div class="container">
+
+                <h1 class="text-center site-title ">E Commerce</h1>
+
+
+        </div>
+
+           <nav>
+            <ul class="nav bg-dark">
+                <li class="nav-item">
+                    <a class="navbar-brand" href={% url 'home' %}>Formal Jungle boutique</a>    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'about' %}>About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'contact' %}>Contact Us</a>
+                </li>
+          {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'inquiry' %}> Inquiries </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navlogin" href={% url 'logout' %}> logout </a>
+                </li>
+            {% else  %}
+                <li class="nav-item">
+                    <a class="nav-link navlogin" href={% url 'login' %}> login </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navlogin" href={% url 'signup' %}> Sign up </a>
+                </li>
+            {% endif %}
+                 <li class="nav-item">
+                    <a class="nav-link navlogin" href={% url 'admin:index' %}> admin </a>
+                </li>
+            </ul>
+           </nav>
+
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+        {% endfor %}
+
+    {% endif %}
+
+
+    </header>
+{% block content %}
+{% endblock content %}
+</body>
+</html>
